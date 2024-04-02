@@ -7,7 +7,15 @@
 			"version": "none",
 			"installMaven": "true",
 			"installGradle": "false"
+		},
+		"ghcr.io/ebaskoro/devcontainer-features/sdkman:1": {
+			"candidate": "java",
+			"version": "21.0.2-graal"
 		}
+	},
+
+	"remoteEnv": {
+		"GRAALVM_HOME": "/usr/local/sdkman/candidates/java/21.0.2-graal"
 	},
 
 	"customizations": {
@@ -17,7 +25,5 @@
 				"vmware.vscode-boot-dev-pack"
 			]
 		}
-	},
-
-	"remoteUser": "root"
+	}
 }
